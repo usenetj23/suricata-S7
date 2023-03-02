@@ -114,6 +114,9 @@ const char *AppProtoToString(AppProto alproto)
         case ALPROTO_PGSQL:
             proto_name = "pgsql";
             break;
+        case ALPROTO_S7COMM:
++            proto_name = "s7comm";
++            break;
         case ALPROTO_TELNET:
             proto_name = "telnet";
             break;
@@ -207,6 +210,8 @@ AppProto StringToAppProto(const char *proto_name)
         return ALPROTO_MQTT;
     if (strcmp(proto_name, "pgsql") == 0)
         return ALPROTO_PGSQL;
+    if (strcmp(proto_name, "s7comm") == 0)
++        return ALPROTO_S7COMM;
     if (strcmp(proto_name, "telnet") == 0)
         return ALPROTO_TELNET;
     if (strcmp(proto_name, "template") == 0)

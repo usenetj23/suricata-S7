@@ -45,6 +45,7 @@ noinst_HEADERS = \
 	app-layer-rdp.h \
 	app-layer-register.h \
 	app-layer-rfb.h \
+	app-layer-s7comm.h \
 	app-layer-sip.h \
 	app-layer-smb.h \
 	app-layer-smtp.h \
@@ -282,6 +283,7 @@ noinst_HEADERS = \
 	detect-rfb-secresult.h \
 	detect-rfb-sectype.h \
 	detect-rpc.h \
+	detect-s7comm-buffer.h \
 	detect-sameip.h \
 	detect-sid.h \
 	detect-sip-method.h \
@@ -419,6 +421,7 @@ noinst_HEADERS = \
 	output-json-pgsql.h \
 	output-json-rdp.h \
 	output-json-rfb.h \
+	output-json-s7comm.h \
 	output-json-sip.h \
 	output-json-smb.h \
 	output-json-smtp.h \
@@ -657,6 +660,7 @@ libsuricata_c_a_SOURCES = \
 	app-layer-rdp.c \
 	app-layer-register.c \
 	app-layer-rfb.c \
+	app-layer-s7comm.c \
 	app-layer-sip.c \
 	app-layer-smb.c \
 	app-layer-smtp.c \
@@ -891,6 +895,7 @@ libsuricata_c_a_SOURCES = \
 	detect-rfb-secresult.c \
 	detect-rfb-sectype.c \
 	detect-rpc.c \
+	detect-s7comm-buffer.c \
 	detect-sameip.c \
 	detect-sid.c \
 	detect-sip-method.c \
@@ -1028,6 +1033,7 @@ libsuricata_c_a_SOURCES = \
 	output-json-pgsql.c \
 	output-json-rdp.c \
 	output-json-rfb.c \
+	output-json-s7comm.h \
 	output-json-sip.c \
 	output-json-smb.c \
 	output-json-smtp.c \

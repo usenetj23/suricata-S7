@@ -52,6 +52,7 @@
 #include "app-layer-nfs-tcp.h"
 #include "app-layer-nfs-udp.h"
 #include "app-layer-ntp.h"
+#include "app-layer-s7comm.h"
 #include "app-layer-tftp.h"
 #include "app-layer-ike.h"
 #include "app-layer-krb5.h"
@@ -1786,6 +1787,7 @@ void AppLayerParserRegisterProtocolParsers(void)
     rs_template_register_parser();
     RegisterRFBParsers();
     RegisterMQTTParsers();
+    RegisterS7commParsers();
     rs_pgsql_register_parser();
     RegisterRdpParsers();
     RegisterHTTP2Parsers();

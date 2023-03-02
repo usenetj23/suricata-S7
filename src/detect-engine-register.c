@@ -232,6 +232,7 @@
 #include "detect-quic-cyu-hash.h"
 #include "detect-quic-cyu-string.h"
 
+#include "detect-s7comm-buffer.h"
 #include "detect-bypass.h"
 #include "detect-ftpdata.h"
 #include "detect-engine-content-inspection.h"
@@ -676,6 +677,7 @@ void SigTableSetup(void)
     DetectQuicCyuHashRegister();
     DetectQuicCyuStringRegister();
 
+    DetectS7commBufferRegister();
     DetectBypassRegister();
     DetectConfigRegister();
 

@@ -1274,6 +1274,7 @@ const char * PacketProfileLoggertIdToString(LoggerId id)
         CASE_CODE (LOGGER_TCP_DATA);
         CASE_CODE (LOGGER_JSON_FLOW);
         CASE_CODE (LOGGER_JSON_NETFLOW);
+        CASE_CODE (LOGGER_JSON_S7COMM);
         CASE_CODE (LOGGER_STATS);
         CASE_CODE (LOGGER_JSON_STATS);
         CASE_CODE (LOGGER_PCAP);
